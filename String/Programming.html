@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div[class=direct-child]{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="parent">
+        <!-- Direct Child Element -->
+        <div class="direct-child">
+            Direct Child Element
+        </div>
+
+        <!-- Direct Child Element -->
+        <div class="direct-child">
+            Direct Child Element
+        </div>
+
+        <!-- Parent Element (Indirect Child) -->
+        <div class="indirect-child">
+            Parent of Indirect Child Elements
+            <!-- Indirect Child Elements -->
+            <p>Indirect Child Element 1</p>
+            <h2>heading</h2>
+            <p>Indirect Child Element 2</p>
+        </div>
+        <!-- Direct Child Element -->
+        <div class="direct-child">
+            Direct Child Element
+        </div>
+    </div>
+    <p>hello</p>
+
+
+    <script>
+        //Q1.(a)write a program to find a square and cube of a number.
+
+        // let a =2;
+        // function Sc(){
+        //     let b=Math.pow(a,2);
+        //     let c =Math.pow(a,3)
+        //     console.log(`The square of ${a} is ${b} and cube of ${a} is ${c}`);
+        // }
+        // Sc();
+
+        //Q1(b)
+
+        // let powercube=1;
+        // let power=1;
+        // let numberpower=2;
+        // let numbercube=3;
+        // let number=8;
+        // let cube=1;
+        // for(let i =1;i<=numberpower;i++){
+        //     power=power * number;
+        // }
+        // for(let i =1;i<=numbercube;i++){
+        //     powercube=powercube * number;
+        // }
+
+        // console.log(`The square of a number ${number} is ${power} and the cube of a number ${number} is ${powercube}`);
+
+        //Q2-Write a program to check if a number is leap year or not.
+
+        // let a =2025;
+        // if(a%4==0){
+        //     console.log(`The Year ${a} is a leapYear`);
+        // }
+        // else{
+        //     console.log(`The year ${a} is not a  leapYear`);
+        // }
+
+        //Q3(a)-Write a program to calculate the sum of first hundred natural numbers.
+
+        // let sum =0;
+
+        // for(let i =1;i<=100;i++){
+        //     sum =sum +i;
+        // }
+        // console.log(`The sum of first hundred natural number is ${sum}`);
+
+        //Q5-write a program to print the sum of all even number starting from 1 to any number.
+
+
+        // let sum =0;
+        // let a =+prompt("Enter the number");
+        // for(let i=1;i<=a;i++){
+        //         if(i%2==0){
+        //             sum = sum +i;
+        //             }
+        //     }
+        //     console.log(`The sum of all even number is ${sum}`);
+
+        //Q7- write a program to count the number of digit present in a number.
+
+        // let a =5465;
+        // let count=0;
+        // while(a>0){
+        //     let rem =a%10;
+        //     count++;
+        //     a=Math.floor(a/10);
+        // }
+        // console.log(count);
+
+        //Q8-write a program to calculate the sum of digit of a given number.
+
+        // let a=256;
+        // b=a;
+
+        // let sum =0;
+        // while(a>0){
+        //     let rem  = a%10;
+        //     sum = sum + rem;
+        //     a=Math.floor(a/10);
+        // }
+
+        // console.log(`The sum of digit of number ${b} is ${sum}`);
+
+        //Q9-Write a program to print multiplication table of a number.
+
+        // let a =+prompt("Enter the number and you will get the table");
+        //     let product =1;
+        // for(let i =1;i<=10;i++){
+        //     product = a*i;
+        //     console.log(`${a} X ${i} = ${product}`);
+        // }
+
+        //Q10-Write a number to reverse a given number .
+
+        // let a=+prompt("Enter the number you want to reverse");
+        // let rev=0;
+        // while(a>0){
+        //     let rem = a%10;
+        //     rev = (rev*10) +rem;
+        //     a=Math.floor(a/10);
+        // }
+        // console.log(`The reverse of give number is ${rev}`);
+
+        //Q11-Write a program that prints the numbers from 1 to 100.But for multiples of 3 print Fizz
+        //instead of a number and for multiple of 5  print Buzz and for numbers that are both multiples of 5 and 3 print
+        //Fizz Buzz.
+
+
+        // for(let i =1;i<=100;i++){
+        //     if(i%3==0){
+        //         console.log(`Fizz `);
+        //     }
+        //     if(i%5==0){
+        //         console.log(`Buzz `);
+        //     }
+        //     if(i%5==0 && i%3==0){
+        //         console.log(`Fizz Buzz`);
+        //     }
+        // }
+
+        //Q13-write a program to check the given number is prime  or not.
+
+        // let a =5;
+        // b=a;
+        //     let i =1;
+        //     let count =0;
+        // while(i<=Math.floor((a/2))){
+        //     if(a%i==0){
+        //         count++;
+        //     }
+        //     i++;
+        // }
+        // if(count==1){
+        //     console.log(`This number ${b} is prime number`);
+        // }
+        // else{
+        //     console.log(`This number ${b} is not prime number`);
+        // }
+
+
+        //Q14-write a program to find and print all the prime numbers within 1-100.
+
+
+        // for (let i = 1; i <= 100; i++) {
+        //     let j = 1;
+        //     let a = i
+        //     let count = 0;
+        //     while (j <= Math.floor(i / 2)) {
+        //         if (i % j == 0) {
+        //             count++;
+        //         }
+        //         j++;
+        //     }
+        //     if (count == 1) {
+        //         console.log(`The number ${a} is a prime number`);
+        //     }
+        //     else {
+        //         console.log(`It is not a prime number ${a}`);
+        //     }
+        // }
+
+        //Q15-write a program to calculate the factorial of the number
+
+
+        // let a =4;
+        // let b =a;
+        // let fact =1;
+        // for(let i =1;i<=a;i++){
+        //     fact = fact *i;
+        // }
+        // console.log(`The factorial of ${b} is ${fact} `);
+
+        //Q16-Write a program to print fibnocci series up to a given number.
+
+        //     let n =+prompt("Enter the length of fibnocci series");
+        //     let a =1
+        //     let b =2
+        //     let c =0
+        //     console.log(`${a}`);
+        //     console.log(`${b}`);
+        // for(let i =2;i<=n;i++){
+        //     c=a+b;
+        //     a=b;
+        //     b=c;
+        //     console.log(`${c}`);
+        // }
+
+        //Q17- Write a program to calculate the sum of first 20 fibnocci numbers.
+
+            // let n=+prompt("Enter the number");
+            // let sum =0;
+            // let a =1; let b =2; 
+            // let fibnoccisum=0;
+            // if(n==1){
+
+            //     sum =1;
+            //     fibnoccisum=1
+            // }
+            // if(n==2){
+            //     sum =a+b;
+            //     fibnoccisum=sum
+            // }
+            // else if (n>=3){
+            //     fibnoccisum=a+b;
+            //     for(let i =2;i<n;i++){
+            //         sum =a+b;
+            //         fibnoccisum+=sum;
+            //         a=b;
+            //         b=sum;
+            //     }
+            // }
+            // console.log(`The sum of 20 fibnocci numbers is ${fibnoccisum}`);
+
+
+            // console.log('Start');
+
+// Microtask 1: Promise
+
+// setTimeout(() => {
+//     console.log("settimeoutfirst");
+// });
+// Promise.resolve().then(() => {
+//   console.log('Microtask 1 (Promise)');
+// });
+
+
+// Promise.resolve().then(()=>{
+//     console.log("Microtask 2");
+// });
+
+
+// console.log('End');
+
+
+
+
+
+        
+    </script>
+</body>
+
+</html>
